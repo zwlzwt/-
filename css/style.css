@@ -35,14 +35,18 @@ html body{
 @media (min-width: 801px){
 	#zhihu-logo{
 		position: relative;
-		left: 32px;
+		left: 200px;
 		display: inline-block;
 		height: inherit;
 		font-size: 150%;
+		background-image: url(img/new_logo@2x.png);
+		background-size:61px 30px;
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		background-position: 0px 8px;
 		width: 61px;
 		color: #fff;
-		text-align: center;
-		line-height:200%;
+		text-indent: -9999px;
 		text-decoration: none;
 	}
 	
@@ -51,8 +55,99 @@ html body{
 	width: 100px;
 	height: inherit;
 }
+/* 搜索框 */
+@media (min-width: 801px){
+	.search-question{
+		left:300px;
+		width:320px;
+	}
+	.top-search{
+	background-color: #fff;
+	margin-top:6px;
+	height: 26px;
+	border-radius: 4px;
+	width:240px;
+	padding: 4px 10px;
+}
+	.search-input-text{
+	border:0px;
+	height:26px;
+	line-height: 26px;
+	outline: none;
+}
+	.search-button{
+		background-color: #fff;
+		background-image: url(img/search.svg);
+		background-size: 20px 27px;
+	}
+
+}
+@media (max-width: 800px){
+	.search-question{
+		left:98px;
+		width:100px;
+	}
+	.top-search{
+		width:50px;
+	}
+	.search-input-text{
+		display: none;
+	}
+	.search-button{
+		position: absolute;
+		top:11px;
+		background-image: url(img/search01.svg);
+		background-size: 15px 28px;
+		background-color:rgba(0,0,0,0);
+	}
+}
 
 
+.search-question{
+	position: absolute;
+	top:0px;
+	height: inherit;
+}
+
+
+.search-button{
+	float:left;
+	border:0px;
+	outline: none;
+	cursor:pointer;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 27px;
+}
+/* 提问 */
+@media (min-width: 801px){
+	.question{
+		width: 53px;
+		height: 32px;
+		top:8px;
+	}
+}
+@media (max-width: 800px){
+	.question{
+		width: 45px;
+		height: 24px;
+		top:13px;
+	}
+
+}
+.question{
+	position: absolute;
+	cursor: pointer;
+	right:0px;
+	outline: none;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,.12);
+	border:1px solid #0276AA;
+	border-radius: 4px;
+	color:#fff;
+	background-color: #03A9F4;
+	box-shadow: 0 1px 2px rgba(0,0,0,.5),inset 0 1px 2px rgba(255,255,255,.5);
+}
 /* 列表部分  */
 @media (max-width: 800px){
 	.top-nav{
@@ -61,6 +156,7 @@ html body{
 		left: 200px;
 		width:300px;
 		height: inherit;
+		border-radius: 2px;
 	}
 
 }
