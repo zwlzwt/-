@@ -62,26 +62,31 @@ html body{
 		width:320px;
 	}
 	.top-search{
-	background-color: #fff;
-	margin-top:6px;
-	height: 26px;
-	border-radius: 4px;
-	width:240px;
-	padding: 4px 10px;
+		background-color: #fff;
+		margin-top:6px;
+		height: 26px;
+		border-radius: 4px;
+		width:240px;
+		padding: 4px 10px;
 }
 	.search-input-text{
-	border:0px;
-	height:26px;
-	line-height: 26px;
-	outline: none;
+		font-size: 0.8em;
+		border:0px;
+		width: 200px;
+		height:26px;
+		line-height: 26px;
+		outline: none;
 }
 	.search-button{
 		background-color: #fff;
 		background-image: url(img/search.svg);
-		background-size: 20px 27px;
+		background-size: 18px 25px;
 	}
 
 }
+
+
+
 @media (max-width: 800px){
 	.search-question{
 		left:98px;
@@ -91,15 +96,45 @@ html body{
 		width:50px;
 	}
 	.search-input-text{
-		display: none;
+		visibility: hidden;
+		z-index: 1;
+		width: 0px;
+		height: 35px;
+		outline: none;
+		margin-top: 7px;
+		padding-left: 0px;
+		border-radius: 4px;
+		border:0px;
+		background-color:#fff;
+		font-size: 0.8em;
+		color:#080808;
+  		-webkit-transition: width 0.5s 0s, visibility 0s 0.5s,padding-left 0s 0.5s;
+  		-moz-transition: width 0.5s 0s, visibility 0s 0.5s,padding-left 0s 0.5s;
+  		transition: width 0.5s 0s, visibility 0s 0.5s,padding-left 0s 0.5s;
 	}
 	.search-button{
 		position: absolute;
-		top:11px;
+		top:10px;
+		left:8px;
 		background-image: url(img/search01.svg);
 		background-size: 15px 28px;
 		background-color:rgba(0,0,0,0);
 	}
+	.search-button:hover{
+		background-image: url(img/search.svg);
+	}
+	.button-replace{
+		background-image: url(img/search.svg);
+	}
+	.dropdown-active{
+		visibility: visible;
+		width: 300px;
+		padding-left: 26px;
+  		-webkit-transition: width 0.5s 0s, visibility 0s 0s,padding-left 0.5s 0s;
+  		-moz-transition: width 0.5s 0s, visibility 0s 0s,padding-left 0.5s 0s;
+  		transition: width 0.5s 0s, visibility 0s 0s,padding-left 0.5s 0s;
+}
+	
 }
 
 
@@ -119,6 +154,9 @@ html body{
 	width: 30px;
 	height: 27px;
 }
+
+
+
 /* 提问 */
 @media (min-width: 801px){
 	.question{
@@ -131,7 +169,23 @@ html body{
 	.question{
 		width: 45px;
 		height: 24px;
-		top:13px;
+		top:14px;
+		transform:translateX(0);
+		-ms-transform:translateX(0); /* Internet Explorer */
+		-moz-transform:translateX(0); /* Firefox */
+		-webkit-transform:translateX(0); /* Safari 和 Chrome */
+		-webkit-transition:-webkit-transform 1s 0s;
+		-moz-transition:-moz-transform 1s 0s;
+		transition:transform 1s 0s;
+	}
+	.questionMove{
+		transform:translateX(260px);
+		-ms-transform:translateX(260px); /* Internet Explorer */
+		-moz-transform:translateX(260px); /* Firefox */
+		-webkit-transform:translateX(260px); /* Safari 和 Chrome */
+		-webkit-transition:-webkit-transform 0.5s 0s;
+		-moz-transition:-moz-transform 0.5s 0s;
+		transition:transform 0.5s 0s;
 	}
 
 }
@@ -151,23 +205,38 @@ html body{
 /* 列表部分  */
 @media (max-width: 800px){
 	.top-nav{
+		display: inline-block;
 		position: absolute;
 		top: 0px;
 		left: 200px;
 		width:300px;
 		height: inherit;
 		border-radius: 2px;
+		-webkit-transition:display 1s 0s;
+		-moz-transition:display 1s 0s;
+		transition:display 1s 0s;
+	}
+
+	.hidden-nav{
+		display: none;
+		-webkit-transition:display 1s 0s;
+		-moz-transition:display 1s 0s;
+		transition:display 1s 0s;
 	}
 
 }
 @media (min-width: 801px){
 	.top-nav{
+		display: inline-block;
 		position: absolute;
 		left: 700px;
 		top: 0px;
 		width: 300px;
 		height: inherit;
 	}
+}
+.top-nav-ul{
+	list-style: none;
 }	
 .tab{
 	position: relative;
