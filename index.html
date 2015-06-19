@@ -31,15 +31,117 @@
 							<a href="/#">话题</a>
 						</li>
 						<li class="tab tab-message">
-							<a href="/#">消息</a>
+							<a href="/">消息</a>
 						</li>
 
 					</ul>
+					<div class="top-nav-message-drop-menu">
+						<span class="message-position-module"></span>
+						<div class="dropdown-conversation">
+							<div class="dropdown-conversation-title clearfix">
+								<button class="conversation-title-inner message">
+									<span class="icon">消息</span>
+								</button>
+								<button class="conversation-title-inner user">
+									<span class="icon">用户</span>
+								</button>
+								<button class="conversation-title-inner thanks">
+									<span class="icon">赞同</span>
+								</button>
+							</div>	
+							<div class="conversation-top-border"></div>
+							<div class="conversation-frame">
+								<div class="conversation-frame-content" style="position:relative; overflow:hidden; display:none;"></div>
+								<div class="conversation-frame-content" style="position:relative; overflow:hidden; display:none;"></div>
+								<div class="conversation-frame-content" style="position:relative; overflow:hidden; display:none;"></div>
+							</div>
+							<div class="conversation-bottom-border"></div>
+							<div class="conversation-footer clearfix">
+								<a href="/" class="conversation-footer-right">查看全部 》</a>
+								<a href="/" class="conversation-footer-left">
+									<span></span>
+								</a>
+							</div>
+						</div>
 
+					</div>
 				</div>
 				<div class="top-profile"></div>
 		</div>
+		<!-- 提问对话框 -->
+		<div class="modal-bg"></div>
+		<div class="modal-wrapper">
+			<div class="modal-dialog">
+				<div class="modal-dialog-title">
+					<span class="modal-dialog-title-text">提问</span>
+					<span class="modal-dialog-title-close"></span>
+				</div>
+				<div class="modal-dialog-content">
+					<div class="zh-add-question-form">
+						<form>
+							<div class="form-text-input">
+								<textarea name="question" placeholder="写下你的问题" class="input-question" autocomplete="off">
+								</textarea>
+							</div>
+							<div class="zg-section-big">
+								<div class="describe-question-title">
+									<h3>问题说明（可选）：</h3>
+									<span class="right-editor-toolbar">
+										<div class="editor-toolbar-icon">
+											<em class="tr-inline-icon icon-replace1"></em>
+										</div>
+										<div class="editor-toolbar-icon">
+											<em class="tr-inline-icon icon-replace2"></em>
+										</div>
+										<div class="editor-toolbar-icon">
+											<em class="tr-inline-icon icon-replace3"></em>
+										</div>
+									</span>
+								</div>
+								<div class="describe-question-content">
+									<div class="ds-editable-editor-wrap">
+										<div class="ds-editable-editor-field">
+											<p style="margin:0;padding:0;">
+												<span style="font-style:normal;color:#999;font-size:13px;">问题背景、等详细信息</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="add-theme-from-topic-wrap">
+								<div class="add-theme-from-topic-title">
+									<h3 style="display: inline-block;font-size: 13px;margin: 0;">选择话题：</h3>
+									<span class="theme-title-prompt">话题越精准，越容易让相关领域专业人士看到你的问题</span>
+								</div>
+								<div class="topic-tag-editor">
+									<div class="topic-tag-editor-wrap">
+										<div class="topic-tag-editor-search">
+											<label class="topic-search-icon"></label>
+											<input type="text" placeholder="搜索话题" class="topic-tag-input">
+										</div>
+									</div>
+								</div>
 
+							</div>
+							<div class="bottom-command">
+								<label class="bottom-command-hide-name">
+									<input type="checkbox" id="checkbox">
+									<h5 style="margin:5px 0; display:inline-block; font-size:14px; font-weight:500; color:#7F7F7F">匿名</h5>
+									<span class="bottom-command-split">&nbsp;</span>
+								</label>
+								<div class="bottom-command-share">
+									<span style="font-size:14px;font-weight:500;">分享到</span>
+									<span class="share-sina"></span>
+								</div>
+								<a href="" class="command-cancel">取消</a>
+								<a href="" class="command-add">发布</a>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
