@@ -57,7 +57,7 @@ a{
 		text-indent: -9999px;
 		text-decoration: none;
 	}
-	
+
 }
 .logo {
 	width: 100px;
@@ -141,7 +141,7 @@ a{
   	-moz-transition: width 0.5s 0s, visibility 0s 0s,padding-left 0.5s 0s;
   	transition: width 0.5s 0s, visibility 0s 0s,padding-left 0.5s 0s;
 }
-	
+
 }
 
 
@@ -249,49 +249,49 @@ a{
 @keyframes scale-fade {
 	0%   {
 		transform:scale(0,0);
-		-ms-transform:scale(0,0); 	
-		-moz-transform:scale(0,0); 	
-		-webkit-transform:scale(0,0); 
+		-ms-transform:scale(0,0);
+		-moz-transform:scale(0,0);
+		-webkit-transform:scale(0,0);
 		-o-transform:scale(0,0);
 	}
 	80%   {
 		transform:scale(1.2,1.2);
-		-ms-transform:scale(1.2,1.2); 	
-		-moz-transform:scale(1.2,1.2); 	
-		-webkit-transform:scale(1.2,1.2); 
+		-ms-transform:scale(1.2,1.2);
+		-moz-transform:scale(1.2,1.2);
+		-webkit-transform:scale(1.2,1.2);
 		-o-transform:scale(1.2,1.2);
 	}
 	100%  {
 		transform:scale(1,1);
-		-ms-transform:scale(1,1); 	
-		-moz-transform:scale(1,1); 	
-		-webkit-transform:scale(1,1); 
+		-ms-transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 		-o-transform:scale(1,1);
 	}
-	
-	
+
+
 }
 @-moz-keyframes scale-fade {
 	0%   {
 		transform:scale(0,0);
-		-ms-transform:scale(0,0); 	
-		-moz-transform:scale(0,0); 	
-		-webkit-transform:scale(0,0); 
+		-ms-transform:scale(0,0);
+		-moz-transform:scale(0,0);
+		-webkit-transform:scale(0,0);
 		-o-transform:scale(0,0);
 	}
 
 	80%   {
 		transform:scale(1.2,1.2);
-		-ms-transform:scale(1.2,1.2); 	
-		-moz-transform:scale(1.2,1.2); 	
-		-webkit-transform:scale(1.2,1.2); 
+		-ms-transform:scale(1.2,1.2);
+		-moz-transform:scale(1.2,1.2);
+		-webkit-transform:scale(1.2,1.2);
 		-o-transform:scale(1.2,1.2);
 	}
 	100%  {
 		transform:scale(1,1);
-		-ms-transform:scale(1,1); 	
-		-moz-transform:scale(1,1); 	
-		-webkit-transform:scale(1,1); 
+		-ms-transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 		-o-transform:scale(1,1);
 	}
 
@@ -299,24 +299,24 @@ a{
 @-webkit-keyframes scale-fade {
 	0%   {
 		transform:scale(0,0);
-		-ms-transform:scale(0,0); 	
-		-moz-transform:scale(0,0); 	
-		-webkit-transform:scale(0,0); 
+		-ms-transform:scale(0,0);
+		-moz-transform:scale(0,0);
+		-webkit-transform:scale(0,0);
 		-o-transform:scale(0,0);
 	}
 
 	80%   {
 		transform:scale(1.2,1.2);
-		-ms-transform:scale(1.2,1.2); 	
-		-moz-transform:scale(1.2,1.2); 	
-		-webkit-transform:scale(1.2,1.2); 
+		-ms-transform:scale(1.2,1.2);
+		-moz-transform:scale(1.2,1.2);
+		-webkit-transform:scale(1.2,1.2);
 		-o-transform:scale(1.2,1.2);
 	}
 	100%  {
 		transform:scale(1,1);
-		-ms-transform:scale(1,1); 	
-		-moz-transform:scale(1,1); 	
-		-webkit-transform:scale(1,1); 
+		-ms-transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 		-o-transform:scale(1,1);
 	}
 
@@ -324,24 +324,24 @@ a{
 @-o-keyframes scale-fade {
 	0%   {
 		transform:scale(0,0);
-		-ms-transform:scale(0,0); 	
-		-moz-transform:scale(0,0); 	
-		-webkit-transform:scale(0,0); 
+		-ms-transform:scale(0,0);
+		-moz-transform:scale(0,0);
+		-webkit-transform:scale(0,0);
 		-o-transform:scale(0,0);
 	}
 
 	80%   {
 		transform:scale(1.2,1.2);
-		-ms-transform:scale(1.2,1.2); 	
-		-moz-transform:scale(1.2,1.2); 	
-		-webkit-transform:scale(1.2,1.2); 
+		-ms-transform:scale(1.2,1.2);
+		-moz-transform:scale(1.2,1.2);
+		-webkit-transform:scale(1.2,1.2);
 		-o-transform:scale(1.2,1.2);
 	}
 	100%  {
 		transform:scale(1,1);
-		-ms-transform:scale(1,1); 	
-		-moz-transform:scale(1,1); 	
-		-webkit-transform:scale(1,1); 
+		-ms-transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 		-o-transform:scale(1,1);
 	}
 
@@ -605,7 +605,7 @@ a{
 }
 .top-nav-ul {
 	list-style: none;
-}	
+}
 .tab {
 	position: relative;
 	float:left;
@@ -961,7 +961,7 @@ a{
 	.login-nav li a:hover {
 		color: #40E0D0;
 	}
-	
+
 }
 
 
@@ -1321,9 +1321,9 @@ a{
 }
 .answer-vote button:hover{
 	transform:scale(1.1,1.1);
-	-ms-transform:scale(1.1,1.1); 	
-	-moz-transform:scale(1.1,1.1); 	
-	-webkit-transform:scale(1.1,1.1); 
+	-ms-transform:scale(1.1,1.1);
+	-moz-transform:scale(1.1,1.1);
+	-webkit-transform:scale(1.1,1.1);
 	-o-transform:scale(1.1,1.1);
 	border-radius: 5px;
 }
