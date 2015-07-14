@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   };
   $contentWrapper.on('click',function(event){
-    if(!$(event.target).is($('.search-button'))){
+    if(!($(event.target).is($('.search-button'))) && !($(event.target).is('.search-input-text'))){
       $('.search-input-text').removeClass('dropdown-active');
       $('.search-button').removeClass('button-replace');
       $('.question').removeClass('questionMove');
@@ -47,14 +47,14 @@ $(document).ready(function(){
       removeLogin();
       removeQuestion();
       $('.top-nav-message-drop-menu').removeClass('animation-message-sild-down');
-    } 
+    }
   });
   function removeQuestion(){
     $('.modal-bg').css('display','none');
     $('.modal-wrapper').removeClass('modal-display');
     $('.modal-dialog').removeClass('modal-dialog-animation');
-  } 
-  
+  }
+
   /* 消息 */
   $('.tab-message').on('click',function(event){
     event.preventDefault();
@@ -122,7 +122,7 @@ $(document).ready(function(){
   function floatLabels(){
     var $inputFields = $loginModal_container.find('.cd-label').next();
     $inputFields.each(function(){
-      var singleInput = $(this); 
+      var singleInput = $(this);
       checkVal(singleInput);
       singleInput.on('change keyup', function(){
         checkVal(singleInput);
@@ -136,7 +136,7 @@ $(document).ready(function(){
   $('.hide-password').on('click', function(){
     var $this= $(this),
         $password_field = $this.prev('input');
-    
+
     ( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
     ( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Hide');
   });
@@ -151,7 +151,7 @@ $(document).ready(function(){
     $answerVotelist.eq(e).find('.content-summary').css('display','block');
     $answerVotelist.eq(e).children('.feedback-footer').children('span').css('visibility','hidden');
     $answerVotelist.eq(e).find('.editable-content').css('display','none');
-  } 
+  }
   $('.content-summary').children('span').on('click',function(){
     var lisNum = $(this).parent().parent().parent().index();
     visibleContent(lisNum);
